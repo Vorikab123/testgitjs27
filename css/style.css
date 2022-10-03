@@ -1,0 +1,49 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    animation-name: animation1, animation2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    /* animation-delay: 2s ; */
+    /* animation-duration: reverse; */
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: 
+    cubic-bezier(.51,1.05,.48,-0.03);
+    /* animation-timing-function: steps(2); */
+}
+@keyframes animation1{
+    0%{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    50%{
+        height: 350px;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+    }
+/* from{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+ to{
+    width: 100px;
+    height: 100px;
+background-color: aquamarine;
+} */
+}
+@keyframes animation2{
+from{
+    margin-left: 0;
+}
+to{
+    margin-left: 200px;
+}
+}
